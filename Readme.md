@@ -1,7 +1,7 @@
-# Личный проект «Глейси»
+﻿# Личный проект «Глейси»
 
 * Студент: [Aleksandra Leonteva](https://up.htmlacademy.ru/htmlcss/15/user/275359).
-* Наставник: `Неизвестно`.
+* Наставник: `Oleg Zubov`.
 
 ---
 
