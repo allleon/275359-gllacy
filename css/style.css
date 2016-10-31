@@ -1,0 +1,45 @@
+body {
+	font-size: 16px;
+	line-height: 22px;
+	color: white;
+	font-weight: bold;
+	font-family: Roboto, sans-serif;
+	background: url("img/icecream.png") no-repeat;
+	background-color: #849d8f;
+}
+
+.raspberries {
+	background: url("img/Малиновый фон.png") no-repeat;
+}
+
+.chocolate {
+	background: url("img/Шоколадный фон.png") no-repeat;
+}
+
+.seo-item {
+	background: url("img/Фон.jpg") repeat-x;
+}
+
+.blog {
+	background: url("img/Клубничный фон.png") no-repeat;
+}
+
+.mailing {
+	background: url("img/Подложка.png") no-repeat;
+}
+
+h1 {
+	font-size: 60px;
+	line-height: 60.35px;
+	color: white;
+	font-weight: bold;
+	font-family: Roboto, sans-serif;
+}
+
+h2 {
+	font-size: 35px;
+	line-height: 41px;
+	color: white;
+	font-weight: bold;
+	font-family: Roboto, sans-serif;
+}
