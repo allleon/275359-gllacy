@@ -255,8 +255,6 @@ p {
 	padding-left: 27px;
 }
 
-
-
 .map {
 	display: inline-block;
 	margin-top: 55px;
@@ -331,7 +329,6 @@ p {
 	margin-right: 80px;
 }
 
-
 .mini-navigation {
 	width: 679px;
     min-height: 70px;
@@ -342,7 +339,7 @@ p {
 
 .ranging {
 	margin-left: 27px;
-	margin-top: 200px;
+	margin-top: 195px;
 }
 
 .filters {
@@ -352,10 +349,12 @@ p {
 	margin-left: 27px;
 }
 
-
-
 .pagination {
 	display: inline-block;
 	margin-left: 980px;
 
+}
+
+.clearfix {
+	clear: both;
 }
