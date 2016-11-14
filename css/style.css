@@ -7,6 +7,8 @@ body {
 	background: url("img/icecream.png") no-repeat;
 	background-size: 1200px auto;
 	background-color: #849d8f;
+	width: 1146px; 
+	margin: 0 auto;
 }
 
 h1 {
@@ -110,10 +112,10 @@ p {
     margin-bottom: 70px;
 }
 
-.banner-item:first-child {
+/*.banner-item:first-child {
     margin-left: 27px;
  }
-
+*/
 .raspberries {
 	background: url("img/Малиновый фон.png") no-repeat;
 	width: 560px;
@@ -135,10 +137,11 @@ p {
 	margin-bottom: 40px;
 }
 
+/*
 .product-catalog:first-child {
     margin-left: 27px;
  }
-
+*/
 .badge {
 	position: absolute;
     width: 60px;
@@ -163,14 +166,14 @@ p {
 	border-radius: 15px;
 	width: 1146px;
 	min-height: 306px;
-	margin-left: 27px;
+	/*margin-left: 27px;*/
 }
 
 .seo-name {
 	font-size: 24px;
 	color: #323232;
 	padding-top: 34px;
-	padding-left: 21px;
+	/*padding-left: 21px;*/
 }
 
 .seo-item .seo-name {
@@ -213,10 +216,10 @@ p {
     height: 220px;
 }
 
-.news-item:first-child {
+/*.news-item:first-child {
     margin-left: 27px;
 }
-
+*/
 .blog {
 	background: url("img/Клубничный фон.png") no-repeat;
 	width: 560px;
@@ -232,7 +235,7 @@ p {
 	padding-right: 245px;
 	line-height: 30px;
 	float: right;
-	padding-left: 20px;
+	/*padding-left: 20px;*/
 	font-size: 24px;
 	color: #323232;
 }
@@ -307,7 +310,7 @@ p {
 .footer-social {
 	float: left;
 	width: 400px;
-	margin-left: 27px;
+	/*margin-left: 27px;*/
 }
 
 .footer-contacts {
