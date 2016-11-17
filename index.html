@@ -17,26 +17,27 @@
     <img src="img/logo.png" width="154" height="64" alt="Глейси">
    </div>
     <div class="container clearfix">
-        <nav class="main-navigation">
-         <ul>
-            <li>
-              <a href="#">Каталог</a>
-            </li>
-            <li>
-              <a href="#">Доставка и оплата</a>
-            </li>
-            <li>
-              <a href="#">О Компании</a>
-            </li>
-         </ul>
-        </nav>
+      <nav class="main-navigation">
+        <ul>
+          <li>
+            <a href="#">Каталог</a>
+          </li>
+          <li>
+            <a href="#">Доставка и оплата</a>
+          </li>
+          <li>
+            <a href="#">О Компании</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user-block">
         <div class="search">
           <img src="img/Лупа.png" width="17" height="17" alt="Лупа">
           <form action="#" method="get">
-           <input type="text" name="search">
+            <input type="text" name="search">
           </form>
         </div>
-        <div class="user-block">
+        <div class="entrance">
           <img src="img/Вход.png" width="20" height="19" alt="Вход">
           <a class="login" href="#">Вход</a>
         </div>
@@ -48,40 +49,36 @@
           С 10 до 20, ежедневно 
           <span class="number">8 812 450-25-25</span>
         </section>
+      </div>
     </div>
   </header>
   <div class="background">
    <h1>Крем-брюле и пломбир с малиновым джемом</h1>
     <a class="btn" href="#">Давайте оба!</a>
   </div>
-  <div class="banner">
-   <div class="banner-item">
-   <div class="raspberries">
-    <style>
-       .raspberries {
-         background-image: url("img/Малиновый фон.png");
-       }
-    </style>
-     <h2>Малинка даром!</h2>
-      <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-     <a href="#" class="jam">Хочу варенье!</a>
-   </div>
-   </div>
-   <div class="banner-item">
-   <div class="chocolate">
-    <style>
-       .chocolate {
-         background-image: url("img/Шоколадный фон.png");
-       }
-    </style>
-     <h2>Шоколадки даром!</h2>
-      <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-     <a href="#" class="jam">Хочу шоколадки!</a>
-   </div>
-   </div>
-   <div class="clearfix"></div>
+  <div class="banner clearfix">
+     <div class="raspberries">
+      <style>
+         .raspberries {
+           background-image: url("img/Малиновый фон.png");
+         }
+      </style>
+       <h2>Малинка даром!</h2>
+        <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+       <a href="#" class="jam">Хочу варенье!</a>
+     </div>
+     <div class="chocolate">
+      <style>
+         .chocolate {
+           background-image: url("img/Шоколадный фон.png");
+         }
+      </style>
+       <h2>Шоколадки даром!</h2>
+        <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+       <a href="#" class="jam">Хочу шоколадки!</a>
+     </div>
   </div>
-  <div class="hits">
+  <div class="hits clearfix">
    <article class="product-catalog">
     <span class="badge">ХИТ</span>
       <img src="img/1.png" width="267" height="267" alt="Сливочно-апельсиновое">    
@@ -106,9 +103,8 @@
       <span class="price">415 ₽<span class="smaller">/кг</span></span>
       <a href="#" class="catalog-title">Сливочное крем-брюле с карамельной подливкой</a>
    </article>
-   <div class="clearfix"></div>
   </div>
-  <section class="seo">
+  <section class="seo clearfix">
     <div class="seo-item">
      <style>
        .seo-item {
@@ -138,24 +134,20 @@
        </div>
       </div>
     </div>
-    <div class="clearfix"></div>
   </section>
-    <div class="news">
-     <div class="news-item">
-      <div class="blog">
+    <div class="container clearfix">
+      <div class="news-blog">
        <style>
-        .blog {
+        .news-blog {
           background-image: url("img/Клубничный фон.png");
         }
        </style>
        <p>Новое в нашем блоге</p>
-       <a href="#" class="news-title">10  способов сервировки фруктовых щербетов к столу</a>
+       <p class="news-text"><a href="#">10  способов сервировки<br>фруктовых щербетов к<br>столу</a></p>
       </div>
-     </div>
-     <div class="news-item">
-      <div class="mailing">
+      <div class="news-mailing">
        <style>
-        .mailing {
+        .news-mailing {
           background-image: url("img/Подложка.png");
         }
        </style>
@@ -165,8 +157,6 @@
        <button class="btn" type="submit">Отправить</button>
       </form>
       </div>
-     </div>
-     <div class="clearfix"></div>
     </div>
     <div class="map">
       <style>
@@ -175,7 +165,7 @@
         }
       </style>
       <div class="achievment-badge"></div>
-      <div class="index-content">
+      <div class="index-content clearfix">
        <p>Адрес главного офиса и офлайн магазина:<br>
        <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b><br>
       Для заказов по телефону:<br>
@@ -185,8 +175,7 @@
        <a class="btn" href="#">Форма обратной связи</a>
       </div>
     </div>
-   <footer class="main-footer">
-    <div class="container">
+   <footer class="main-footer clearfix">
       <section class="footer-social">
         <a class="social-btn social-btn-tvitter" href="#">
          <img src="img/Твитер.png" width="32" height="32" alt="Твитер">
@@ -212,10 +201,8 @@
       </section>
       <section class="footer-copyright">
         <img src="img/Лого.png" width="108" height="37" alt="HTML Academy">
-        <p>Сделано в <a class="btn" href="https://htmlacademy.ru">HTML Academy</a> © 2016</p>
+        <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2016</p>
       </section>
-    </div>
-    <div class="clearfix"></div>
    </footer>
   </body>
 </html>
