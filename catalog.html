@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,900,900italic,700,500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link href="css/style.css" rel="stylesheet"></link> 
   </head>
   <body background="#">
@@ -27,9 +28,9 @@
       <div class="user-block">
         <div class="search">
           <img src="img/Лупа.png" width="17" height="17" alt="Лупа">
-          <form action="#" method="get">
+          <!--<form action="#" method="get">
             <input type="text" name="search">
-          </form>
+          </form>-->
         </div>
         <div class="entrance">
           <img src="img/Вход.png" width="20" height="19" alt="Вход">
@@ -41,7 +42,7 @@
         </div> 
         <section class="contacts">
           С 10 до 20, ежедневно
-          <span class="number">8 812 450-25-25</span>
+          <span class="number"><br>8 812 450-25-25</span>
         </section>
     </div>
    </header>
@@ -54,81 +55,83 @@
         <li>
          <a href="#">Каталог</a>
         </li>
-        <li class="disabled">Сливочное</li>
+        <li class="selected">Сливочное</li>
        </ul>
      </nav>
    </div>
    <h1>Сливочное мороженое</h1>
-   <div class="ranging">
-    <div class="filters">
-     <form action="#" method="get">
-      <p>Сортировка</p>
-        <select name="sorting">
-           <option value="popular">по популярности</option>
-           <option value="inexpensively">сначала недорогие</option>
-           <option value="expensive">сначала дорогие</option>
-           <option value="fatness">по жирности</option>
-        </select>
-     </form>
-    </div>
-    <div class="filters">
-     <form action="#" method="get">
-        <p>Цена: 100 руб. – 500 руб.</p>
-        <div class="range-filter">
-           <div class="range-controls">
-              <div class="scale">
-                <div style="margin-left:50px;width:100px;" class="bar">
-                </div>
-              </div>
-              <div class="toggle min-toggle"></div>
-              <div class="toggle max-toggle"></div>
-          </div>
-          <div class="price-controls">
-              от <input class="min-price" type="text" value="100 руб.">
-              до <input class="max-price" type="text" value="500 руб.">
+    <form class="filter-form" action="#" method="GET">
+    <fieldset class="filter-form__fieldset">
+      <legend class="filter-form__legend">Сортировка:</legend>
+      <select class="filter-form__select" name="sorting">
+        <option class="filter-form__sorting-value" value="popularity" selected="">по популярности</option>
+        <option class="filter-form__sorting-value" value="cheap">сначала недорогие</option>
+        <option class="filter-form__sorting-value" value="expensive">сначала дорогие</option>
+        <option class="filter-form__sorting-value" value="fatness">по жирности</option>
+      </select>
+    </fieldset>
+    <fieldset class="filter-form__fieldset">
+      <legend class="filter-form__legend">Цена:
+        <input class="filter-form__min-price" type="text" name="min-price" value="100" disabled=""> руб. –
+        <input class="filter-form__max-price" type="text" name="max-price" value="500" disabled=""> руб.</legend>
+        <div class="filter-form__price">
+          <div class="filter-form__range-line">
+            <div class="filter-form__current-range">
+              <span class="filter-form__min-price-marker"></span>
+              <span class="filter-form__max-price-marker"></span>
+            </div>
           </div>
         </div>
-     </form>
-    </div>
-    <div class="filters">
-     <form action="#" method="get">
-        <p>Жирность:</p>
-           <label>
-             <input type="radio" name="question-one" value="0%">
-              0%
-           </label>
-           <label>
-             <input type="radio" name="question-one" value="до 10%" checked>
-              до 10%
-           </label>
-           <label>
-             <input type="radio" name="question-one" value="до 30%">
-              до 30%
-           </label>
-           <label>
-             <input type="radio" name="question-one" value="выше 30%">
-              выше 30%
-           </label>
+      </fieldset>
+      <fieldset class="filter-form__fieldset">
+        <legend class="filter-form__legend">Жирность:</legend>
+        <ul class="filter-form__list filter-form__list_fatness">
+          <li class="filter-form__list-item">
+            <input class="filter-form__radio" id="fatness-1" type="radio" name="fatness-value" value="0">
+            <label class="filter-form__label" for="fatness-1">0%</label>
+          </li>
+          <li class="filter-form__list-item">
+            <input class="filter-form__radio" id="fatness-2" type="radio" name="fatness-value" value="0-10" checked="">
+            <label class="filter-form__label" for="fatness-2">до 10%</label>
+          </li>
+          <li class="filter-form__list-item">
+            <input class="filter-form__radio" id="fatness-3" type="radio" name="fatness-value" value="10-30">
+            <label class="filter-form__label" for="fatness-3">до 30%</label>
+          </li>
+          <li class="filter-form__list-item">
+            <input class="filter-form__radio" id="fatness-4" type="radio" name="fatness-value" value="30+">
+            <label class="filter-form__label" for="fatness-4">выше 30%</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="filter-form__fieldset">
+        <legend class="filter-form__legend">Наполнители:</legend>
+        <ul class="filter-form__list filter-form__list_fillers">
+          <li class="filter-form__list-item">
+            <input class="filter-form__checkbox" id="filler-1" type="checkbox" name="chocolate" checked="">
+            <label class="filter-form__label" for="filler-1">шоколадные</label>
+          </li>
+          <li class="filter-form__list-item">
+            <input class="filter-form__checkbox" id="filler-2" type="checkbox" name="sugar" checked="">
+            <label class="filter-form__label" for="filler-2">сахарные присыпки</label>
+          </li>
+          <li class="filter-form__list-item">
+            <input class="filter-form__checkbox" id="filler-3" type="checkbox" name="fruits">
+            <label class="filter-form__label" for="filler-3">фрукты</label>
+          </li>
+          <li class="filter-form__list-item">
+            <input class="filter-form__checkbox" id="filler-4" type="checkbox" name="syrups">
+            <label class="filter-form__label" for="filler-4">сиропы</label>
+          </li>
+          <li class="filter-form__list-item">
+            <input class="filter-form__checkbox" id="filler-5" type="checkbox" name="jams">
+            <label class="filter-form__label" for="filler-5">джемы</label>
+          </li>
+        </ul>
+      </fieldset>
+      <button class="filter-form__btn" type="submit">Применить</button>
     </form>
-    </div>
-    <div class="filters">
-     <form action="#" method="get">
-        <p>Наполнители:</p>
-           <input type="checkbox" name="question-two" id="question-two-field" checked>
-              <label for="question-two-field">шоколадные</label>
-           <input type="checkbox" name="question-two" id="question-three-field" checked>
-              <label for="question-three-field">сахарные присыпки</label>
-           <input type="checkbox" name="question-two" id="question-four-field">
-              <label for="question-four-field">фрукты</label>
-           <input type="checkbox" name="question-two" id="question-five-field">
-              <label for="question-five-field">сиропы</label>
-           <input type="checkbox" name="question-two" id="question-six-field">
-              <label for="question-six-field">джемы</label>
-           <input type="submit" value="Применить">
-     </form>
-    </div>
-   </div>
-   <div class="menu clearfix">
+    <div class="menu clearfix">
      <article class="product-catalog">
        <img src="img/1.png" width="267" height="267" alt="Сливочно-апельсиновое">
         <span class="price">310 ₽<span class="smaller">/кг</span></span>
@@ -219,10 +222,14 @@
         <div class="icon">
          <img src="img/Сердце.png" width="15" height="13" alt="Лайк">
         </div>
-          <a href="#">Для поставщиков</a>
-          <a href="#">О производстве</a>
-          <a href="#">Наши документы</a>
-          <a href="#">Экологические стандарты</a>
+          <ul class="left-position">
+          <li><a href="#">Для поставщиков</a></li>
+          <li><a href="#">О производстве</a></li>
+        </ul>
+        <ul class="right-position">
+          <li><a href="#">Наши документы</a></li>
+          <li><a href="#">Экологические стандарты</a></li>
+        </ul>
       </section>
       <section class="footer-copyright">
         <img src="img/Лого.png" width="108" height="37" alt="HTML Academy">

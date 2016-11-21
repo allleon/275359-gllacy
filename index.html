@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <link href="css/style.css" rel="stylesheet"></link> 
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,900,900italic,700,500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href="css/style.css" rel="stylesheet"> 
   </head>
   <body>
      <style>
@@ -33,9 +34,9 @@
       <div class="user-block">
         <div class="search">
           <img src="img/Лупа.png" width="17" height="17" alt="Лупа">
-          <form action="#" method="get">
+          <!--<form action="#" method="get"
             <input type="text" name="search">
-          </form>
+          </form>-->
         </div>
         <div class="entrance">
           <img src="img/Вход.png" width="20" height="19" alt="Вход">
@@ -47,7 +48,7 @@
         </div> 
         <section class="contacts">
           С 10 до 20, ежедневно 
-          <span class="number">8 812 450-25-25</span>
+          <span class="number"><br>8 812 450-25-25</span>
         </section>
       </div>
     </div>
@@ -65,7 +66,7 @@
       </style>
        <h2>Малинка даром!</h2>
         <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-       <a href="#" class="jam">Хочу варенье!</a>
+       <a href="#" class="btn">Хочу варенье!</a>
      </div>
      <div class="chocolate">
       <style>
@@ -75,32 +76,32 @@
       </style>
        <h2>Шоколадки даром!</h2>
         <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-       <a href="#" class="jam">Хочу шоколадки!</a>
+       <a href="#" class="btn">Хочу шоколадки!</a>
      </div>
   </div>
   <div class="hits clearfix">
    <article class="product-catalog">
-    <span class="badge">ХИТ</span>
+    <img class="badge" src="img/hit.png" width="61" height="61" alt="Хит">
+      <span class="price">310 ₽<span class="smaller">/кг</span></span>
       <img src="img/1.png" width="267" height="267" alt="Сливочно-апельсиновое">    
-       <span class="price">310 ₽<span class="smaller">/кг</span></span>
-       <a href="#" class="catalog-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+      <a href="#" class="catalog-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
    </article>
    <article class="product-catalog">
-    <span class="badge">ХИТ</span>
+    <img class="badge" src="img/hit.png" width="61" height="61" alt="Хит">
+      <span class="price">380 ₽<span class="smaller">/кг</span></span>
       <img src="img/2.png" width="267" height="267" alt="Кофейное">
-       <span class="price">380 ₽<span class="smaller">/кг</span></span>
-       <a href="#" class="catalog-title">Сливочно-кофейное с кусочками шоколада</a>
+      <a href="#" class="catalog-title">Сливочно-кофейное с кусочками шоколада</a>
    </article>
    <article class="product-catalog">
-    <span class="badge">ХИТ</span>
-     <img src="img/3.png" width="267" height="267" alt="Сливочно-клубничное">
+    <img class="badge" src="img/hit.png" width="61" height="61" alt="Хит">
       <span class="price">355 ₽<span class="smaller">/кг</span></span>
+      <img src="img/3.png" width="267" height="267" alt="Сливочно-клубничное">
       <a href="#" class="catalog-title">Сливочно-клубничное с присыпкой из белого шоколада</a>
    </article>
    <article class="product-catalog">
-    <span class="badge">ХИТ</span>
-     <img src="img/4.png" width="267" height="267" alt="Крем-брюле">
+    <img class="badge" src="img/hit.png" width="61" height="61" alt="Хит">
       <span class="price">415 ₽<span class="smaller">/кг</span></span>
+      <img src="img/4.png" width="267" height="267" alt="Крем-брюле">
       <a href="#" class="catalog-title">Сливочное крем-брюле с карамельной подливкой</a>
    </article>
   </div>
@@ -194,10 +195,14 @@
         <div class="icon">
          <img src="img/Сердце.png" width="15" height="13" alt="Лайк">
         </div>
-          <a href="#">Для поставщиков</a>
-          <a href="#">О производстве</a>
-          <a href="#">Наши документы</a>
-          <a href="#">Экологические стандарты</a>
+        <ul class="left-position">
+          <li><a href="#">Для поставщиков</a></li>
+          <li><a href="#">О производстве</a></li>
+        </ul>
+        <ul class="right-position">
+          <li><a href="#">Наши документы</a></li>
+          <li><a href="#">Экологические стандарты</a></li>
+        </ul>
       </section>
       <section class="footer-copyright">
         <img src="img/Лого.png" width="108" height="37" alt="HTML Academy">
