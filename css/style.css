@@ -4,7 +4,7 @@ body {
 	color: white;
 	font-weight: bold;
 	font-family: "Roboto", sans-serif;
-	background: url("img/icecream.png") no-repeat;
+	background: url("img/slide-1.png") no-repeat;
 	background-size: 1200px auto;
 	background-color: #849d8f;
 	width: 1146px; 
@@ -16,16 +16,8 @@ h1 {
 	line-height: 60.35px;
 	color: white;
 	font-weight: bold;
-	font-family: Roboto, sans-serif;
+	font-family: "Roboto", sans-serif;
 	margin: 0;
-}
-
-.background {
-	padding: 0px;
-	width: 1146px;
-	text-align: center;
-	margin-bottom: 40px;
-	margin-top: 280px;
 }
 
 h2 {
@@ -186,14 +178,40 @@ p {
 }
 
 .contacts {
-	margin: 15px auto;
+	margin-top: 15px;
+	margin-left: auto;
+	margin-right: 20px;
+	margin-bottom: 0px;
 	width: 180px;
 	font-size: 14px;
 	text-align: right;
+	z-index: 10;
 }
 
 .contacts .number {
 	font-size: 22px;
+}
+
+.background {
+	padding: 0px;
+	width: 1146px;
+	text-align: center;
+	margin-bottom: 40px;
+	margin-top: 280px;
+	display: none;
+}
+
+.background .btn {
+	display: inline-block;
+    padding: 12px 50px;
+
+    font-weight: 600;
+    font-size: 31px;
+    line-height: 41px;
+    vertical-align: top;
+    color: #ffffff;
+    text-decoration: none;
+    text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
 }
 
 .background h1 {
@@ -206,7 +224,7 @@ p {
 
 .btn {
 	padding: 13px 24px;
-	
+
     font-size: 16px;
     line-height: 24px;
     font-family: "Roboto", sans-serif;
@@ -214,20 +232,26 @@ p {
     color:white;
     text-decoration: none;
   
-    background-color: #f16542;
-    border-radius: 100px;
-    border: none;
-    cursor: pointer;
+    background: #f26843;
+  	background:    -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
+  	background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
+  	background:         linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  	border-radius: 100px;
+  	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 }
 
 .btn:hover {
-    background-color:#f17d65;
-    border-radius: 100px;
+	background:    -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+  	background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+ 	background:         linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+ 	box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .btn:active {
-	background-color:#da5037;
-    border-radius: 100px;
+	background:    -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
+  	background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
+  	background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  	box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .background a {
@@ -235,6 +259,61 @@ p {
     font-size: 32px;
     line-height: 44px;
     margin-right: 84px;
+}
+
+.background-controls {
+  	position: absolute;
+  	bottom: 25px;
+  	left: 102px;
+  	z-index: 20;
+
+  	font-size: 0;
+}
+
+.background-controls label {
+  	display: inline-block;
+  	width: 17px;
+  	height: 17px;
+  	margin-right: 8px;
+
+  	vertical-align: top;
+
+  	background-color: transparent;
+  	border: 2px solid #ffffff;
+ 	border-radius: 50%;
+  	cursor: pointer;
+}
+
+body > input[type="radio"] {
+  	display: none;
+}
+
+#btn-1:checked ~ .site-wrapper #slide1,
+#btn-2:checked ~ .site-wrapper #slide2,
+#btn-3:checked ~ .site-wrapper #slide3 {
+  	display: block;
+}
+
+#btn-1:checked ~ .site-wrapper {
+  	
+  	background-image: url("img/slide-1.png");
+}
+
+#btn-2:checked ~ .site-wrapper {
+  	background-color: #8996a6;
+  	background-image: url("img/slide-2.png");
+}
+
+#btn-3:checked ~ .site-wrapper {
+  	background-color: #9d8b84;
+  	background-image: url("img/slide-3.png");
+}
+
+
+#btn-1:checked ~ .site-wrapper label[for="btn-1"],
+#btn-2:checked ~ .site-wrapper label[for="btn-2"],
+#btn-3:checked ~ .site-wrapper label[for="btn-3"] {
+ 	 background-color: #ffffff;
 }
 
 .banner {
@@ -293,6 +372,11 @@ p {
  .product-catalog {
  	text-align: center;
  }
+
+
+
+
+
 
 .badge {
 	position: absolute;
@@ -474,6 +558,7 @@ p {
 }
 
 .index-content b {
+	font-family: "RobotoBold", sans-serif;
 	font-size: 18px;
 	line-height: 24px;
 }
@@ -587,7 +672,6 @@ p {
 	color: #ffbc9e;
 }
 
-/*----— form —----*/
 .form {
 	padding: 20px 15px;
 
@@ -735,7 +819,7 @@ p {
 	line-height: 18px;
 	vertical-align: top;
 }
-/*----— filter-form —----*/
+
 .filter-form {
 	width: 960px;
 	margin-top: 34px;
@@ -777,7 +861,6 @@ p {
 	margin-bottom: 0;
 }
 
-/*----— filter-form__select —----*/
 .filter-form__select {
 	width: 194px;
 	height: 36px;
@@ -815,7 +898,6 @@ p {
 	color: #323232;
 }
 
-/*----— filter-form__range —----*/
 .filter-form__price {
 	width: 188px;
 	padding: 16px;
@@ -881,7 +963,6 @@ p {
 	border: 0;
 }
 
-/*----— filter-form__list —----*/
 .filter-form__list {
 	margin: 0;
 	padding: 9px 16px;
@@ -907,7 +988,6 @@ p {
 	margin-right: 0;
 }
 
-/*----— filter-form__radio —----*/
 .filter-form__radio,
 .filter-form__checkbox {
 	display: none;
@@ -966,7 +1046,6 @@ p {
 	box-shadow: 0 0 0 2px #ffffff;
 }
 
-/*----— filter-form__checkbox —----*/
 .filter-form__checkbox + .filter-form__label::before {
 	content: "";
 	position: absolute;
@@ -1027,6 +1106,10 @@ p {
 	box-shadow: inset 0 2px 1px #696969;
 }
 
+.menu {
+	margin-top: 40px;
+}
+
 .menu .product-catalog:hover {
 	max-height: 405px;
 	padding-bottom: 15px;
@@ -1034,8 +1117,36 @@ p {
     border-radius: 4px
 }
 
-.menu {
-	margin-top: 40px;
+
+
+
+
+
+
+
+
+
+
+.smaller {
+	font-size: 30px;
+	line-height: 45px;
+}
+
+.catalog-title {
+	color: white;
+	font-size: 16px;
+	line-height: 22px;
+}	
+
+.catalog-title:hover {
+	color: #ffbc9e;
+}
+
+
+.menu a {
+	color: white;
+	font-size: 16px;
+	line-height: 22px;
 }
 
 .menu .price {
@@ -1043,6 +1154,10 @@ p {
 	margin-top: -64px;
 	font-size: 45px;
 	line-height: 45px;
+}
+
+.menu .btn:hover {
+	margin-left: 0px;
 }
 
 .pagination {
