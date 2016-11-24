@@ -201,7 +201,7 @@ textarea:focus {
 }
 
 .main-header {
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .logo {
@@ -761,6 +761,8 @@ form button {
 
   color: #ffffff;
 
+  margin-bottom: 0px;
+
   font-size: 14px;
   line-height: 16px;
   font-family: "RobotoBold", "Arial", sans-serif;
@@ -1049,9 +1051,10 @@ form button {
 
 /* Главная страница, описание Магазин Глейси */
 .description {
-  min-height: 300px;
+  min-height: 306px;
   margin-bottom: 40px;
   padding: 30px 21px;
+  padding-bottom: 10px;
 
   color: #323232;
   background: #ede2c8 url("../img/wafer.jpg");
@@ -1685,11 +1688,12 @@ form button {
 
 /* Хлебные крошки */
 .breadcrumbs {
+  margin-top: -18px;
   margin-bottom: 10px;
 }
 
 .breadcrumbs ul {
-  margin: 0;
+  margin: 10;
   padding: 0;
 
   list-style: none;
